@@ -19,4 +19,7 @@ def min_dist(i, j, k, graph):
 			"""
 	if k == -1:
 		return(graph[i][j])
-
+	else:
+		return min(min_dist(i, j, k - 1, graph),
+				   min_dist(i, k, k - 1, graph)
+				   + min_dist(k, j, k - 1, graph))
