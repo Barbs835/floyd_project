@@ -23,3 +23,7 @@ def min_dist(i, j, k, graph):
 		return min(min_dist(i, j, k - 1, graph),
 				   min_dist(i, k, k - 1, graph)
 				   + min_dist(k, j, k - 1, graph))
+
+# Call the function using arguments: i=0, j=2, k=3, graph=distance_graph
+# reult should be  12
+print(min_dist(0, 2, 3, distance_graph))
