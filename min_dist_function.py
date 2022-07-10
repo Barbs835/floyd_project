@@ -17,13 +17,12 @@ def min_dist(i, j, k, graph):
 			k -- intermediate node
 			graph -- 2D list
 			"""
+	# If the path between i and j nodes is direct and does not go through
+	# intermediate k node, return the direct path, otherwise find the
+	# shortest distance between direct and indirecte paths.
 	if k == -1:
 		return(graph[i][j])
 	else:
 		return min(min_dist(i, j, k - 1, graph),
 				   min_dist(i, k, k - 1, graph)
 				   + min_dist(k, j, k - 1, graph))
-
-# Call the function using arguments: i=0, j=2, k=3, graph=distance_graph
-# reult should be  12
-print(min_dist(0, 2, 3, distance_graph))
