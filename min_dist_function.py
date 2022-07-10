@@ -17,3 +17,6 @@ def min_dist(i, j, k, graph):
 			k -- intermediate node
 			graph -- 2D list
 			"""
+	if k == -1:
+		return(graph[i][j])
+
