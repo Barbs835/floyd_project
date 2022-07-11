@@ -14,20 +14,19 @@ def floyd(distance):
 	path = distance
 	max_length = len(distance[0])
 
-	# floyd function will generate base nodes (start, end) using intertools.product()
-	# that will be passed to the recursive inner function min_dist()
 
+	for start_node, end_node in itertools.product(range(max_length), range(max_length)):
 
+		# If start_node and end_node are the same, then the distance would be zero.
+		if start_node == end_node:
+			distance[start_node][end_node] = 0
+			continue
+		# Update the distance graph with the shortest path values by calling the recursive
+		# min_dist() function.
+		distance[start_node][end_node] = min_dist(start_node, end_node, max_length - 1, path)
+	# Print the 2D list with shortest paths.
+	# Any value that have sys.maxsize has no path.
+	return (distance)
 
-
-	# REMINDER: DO NOT USE draft code from last Friday (check mid_assign_corrected folder)
-
-	# INNER FUNCTIONS goes here...............................
-
-	# recursive inner function, which will iterate through k (intermdiate node)
-	# and find the shortest path values.
-
-
-
-# These values will be used to update the outcome graph for shortest distances in
-# the floyd function
+# Calling the floyd() function
+print(floyd(distance_graph))
