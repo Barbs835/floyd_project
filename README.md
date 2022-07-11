@@ -8,8 +8,9 @@ of the indirect path. Then it compares distances of direct and indirect paths be
 
 ## How to Install and Run the Project
 Required installation packages are listed in the requirements.txt file.
-The main code is available 
-$ ./recursive_solution.py
+
+The main code to run is available in the recursive_solution.py
+directory: 
 
 
 ## How to Use the Project
