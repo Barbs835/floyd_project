@@ -7,7 +7,10 @@ The solution picks a node and then calculates the distance between every start a
 of the indirect path. Then it compares distances of direct and indirect paths between given start and end nodes and selects the shortest path and updates the distance graph accordingly.
 
 ### How to Install and Run the Project
-Required installation packages are listed in the requirements.txt file.
+Required installation packages are listed in the following file:
+```
+requirements.txt
+```
 
 The main code is in the recursive_solution.py
 It can be either run by copying the raw content of the file or the floyd_project repo being cloned to the local repository.
