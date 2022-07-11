@@ -12,18 +12,19 @@ graph = [[0, 7, no_path, 8],
 
 
 if __name__ == '__main__':
+    # Measure time of execution of floyd function using recursion
    start = timer()
    recursive_solution.floyd(graph)
    end = timer()
    dur1 = (end - start)
    format_str1 = "It took %f seconds to execute Recursive solution"
 
-
+    # Measure time of execution of imperative floyd function solution
    start = timer()
    imperative_solution.floyd(graph)
    end = timer()
    dur2 = (end - start)
    format_str2 = "It took %f seconds to execute Imperative solution"
-
+    # Print both time execution measurements
    print(format_str1 % dur1)
    print(format_str2 % dur2)
