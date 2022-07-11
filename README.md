@@ -27,7 +27,11 @@ Test files are as follows:
  min_dist_function_test.py 
  floyd_test.py
 ```
-
+Timeit Python module has been used to measure execution time of recursive and imperative versions of the floyd algorithm function.
+The code is available in the following file:
+```
+ performance_analysis.py 
+```
 ### Credits
 This code is based on the Floyd Warshall Algorithm (Imperative Solution) sourced from University of Liverpool assignment paper as well as GeeksforGeeks post available at: https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
 
