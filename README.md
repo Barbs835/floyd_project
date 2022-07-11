@@ -9,12 +9,14 @@ of the indirect path. Then it compares distances of direct and indirect paths be
 ## How to Install and Run the Project
 Required installation packages are listed in the requirements.txt file.
 
-The main code to run is available in the recursive_solution.py
-directory: 
+The main code is in the recursive_solution.py
+It can be either run by copying the raw content of the file or the floyd_project repo being cloned to the local repository.
 
 
-## How to Use the Project
+## Test
+The min_dist_function_test.py and floyd_test.py uses Python unittest library to run basic test cases for the floyd algorithm function and recursive function min_dist()
 
 ## Include Credits
+This code is based on the Floyd Warshall Algorithm (Imperative Solution) sourced from University of Liverpool assignment paper as well as GeeksforGeeks post available at: https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
 
 ## Add a License
