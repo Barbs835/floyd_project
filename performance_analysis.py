@@ -15,6 +15,15 @@ if __name__ == '__main__':
    start = timer()
    recursive_solution.floyd(graph)
    end = timer()
-   duration = (end - start)
-   format_string = "It took %f seconds to execute Recursive solution"
-   print(format_string % duration)
+   dur1 = (end - start)
+   format_str1 = "It took %f seconds to execute Recursive solution"
+
+
+   start = timer()
+   imperative_solution.floyd(graph)
+   end = timer()
+   dur2 = (end - start)
+   format_str2 = "It took %f seconds to execute Imperative solution"
+
+   print(format_str1 % dur1)
+   print(format_str2 % dur2)
