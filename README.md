@@ -7,9 +7,9 @@ The solution picks a node and then calculates the distance between every start a
 of the indirect path. Then it compares distances of direct and indirect paths between given start and end nodes and selects the shortest path and updates the distance graph accordingly.
 
 ### How to Install and Run the Project
-Required installation packages are listed in the following file:
+Required packages are listed in the following file:
 ```
-requirements.txt
+dependencies.txt
 ```
 
 The main code is in the following gfile:
