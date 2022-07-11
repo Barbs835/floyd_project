@@ -7,12 +7,13 @@ The solution picks a node and then calculates the distance between every start a
 of the indirect path. Then it compares distances of direct and indirect paths between given start and end nodes and selects the shortest path and updates the distance graph accordingly.
 
 ### How to Install and Run the Project
-Required packages are listed in the following file:
+ Dependencies file contains all of the software components required for this project to work as intended.
+ File name is as follows:
 ```
 dependencies.txt
 ```
 
-The main code is in the following gfile:
+The main code is in the following file:
 ```
 recursive_solution.py
 ```
