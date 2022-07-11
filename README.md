@@ -12,8 +12,11 @@ Required installation packages are listed in the following file:
 requirements.txt
 ```
 
-The main code is in the recursive_solution.py
-It can be either run by copying the raw content of the file or the floyd_project repo being cloned to the local repository.
+The main code is in the following gfile:
+```
+recursive_solution.py
+```
+It can be either copied (the raw content of the file) or the entire floyd_project repo  cloned to the local repository.
 
 
 ### Test
