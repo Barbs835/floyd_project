@@ -23,9 +23,11 @@ class TestFloyd(unittest.TestCase):
 
     def test_various_arguments(self):
         no_path = sys.maxsize
-
+        # Passing argument as one node
         self.assertEqual(floyd([[4]]), [[0]])
+        # Passing argument as no_path
         self.assertEqual(floyd([[no_path]]), [[0]])
+        # Passing argument as a string
         self.assertEqual(floyd([["str"]]), [[0]])
 
     if __name__ == '__main__':
